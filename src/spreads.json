@@ -1,0 +1,601 @@
+[
+  {
+    "id": "tarot_simples_01",
+    "nome": "Carta Única",
+    "oraculo": "tarot",
+    "nivel": "simples",
+    "numero_cartas": 1,
+    "descricao": "Uma leitura direta para obter clareza imediata sobre uma questão específica ou energia do dia.",
+    "quando_usar": "Dúvidas rápidas, conselho diário ou quando se busca um foco central sem distrações.",
+    "posicoes": [
+      {
+        "nome_da_posicao": "Mensagem Central",
+        "significado": "A essência da resposta ou a energia predominante no momento."
+      }
+    ],
+    "tipo_interpretacao": "psicologica",
+    "premium": false
+  },
+  {
+    "id": "tarot_simples_02",
+    "nome": "Duas Cartas",
+    "oraculo": "tarot",
+    "nivel": "simples",
+    "numero_cartas": 2,
+    "descricao": "Analisa a dualidade de uma situação, contrastando forças ou sugerindo uma ação e sua consequência.",
+    "quando_usar": "Escolhas binárias, entender o que fazer e o que não fazer, ou causa e efeito.",
+    "posicoes": [
+      {
+        "nome_da_posicao": "Ação / Impulso",
+        "significado": "O que deve ser iniciado ou a força motriz da questão."
+      },
+      {
+        "nome_da_posicao": "Reação / Consequência",
+        "significado": "O resultado direto da ação ou a resposta do ambiente."
+      }
+    ],
+    "tipo_interpretacao": "mista",
+    "premium": false
+  },
+  {
+    "id": "tarot_simples_03",
+    "nome": "Três Cartas (Passado / Presente / Futuro)",
+    "oraculo": "tarot",
+    "nivel": "simples",
+    "numero_cartas": 3,
+    "descricao": "A clássica linha do tempo para entender a evolução de qualquer situação.",
+    "quando_usar": "Entender como o passado influenciou o agora e para onde as energias estão caminhando.",
+    "posicoes": [
+      {
+        "nome_da_posicao": "Passado",
+        "significado": "As raízes da questão e influências que já passaram, mas deixaram marcas."
+      },
+      {
+        "nome_da_posicao": "Presente",
+        "significado": "A energia atual, o que está acontecendo agora e o que o consulente pode controlar."
+      },
+      {
+        "nome_da_posicao": "Futuro",
+        "significado": "A tendência provável caso as energias atuais se mantenham."
+      }
+    ],
+    "tipo_interpretacao": "preditiva",
+    "premium": false
+  },
+  {
+    "id": "tarot_simples_04",
+    "nome": "Três Cartas (Situação / Conselho / Resultado)",
+    "oraculo": "tarot",
+    "nivel": "simples",
+    "numero_cartas": 3,
+    "descricao": "Focada em resolução de problemas e orientação prática.",
+    "quando_usar": "Quando o consulente precisa de um direcionamento claro sobre como agir em um impasse.",
+    "posicoes": [
+      {
+        "nome_da_posicao": "Situação",
+        "significado": "O panorama real do problema, muitas vezes revelando o que está oculto."
+      },
+      {
+        "nome_da_posicao": "Conselho",
+        "significado": "A melhor atitude a ser tomada ou a mudança de perspectiva necessária."
+      },
+      {
+        "nome_da_posicao": "Resultado",
+        "significado": "O desfecho esperado ao seguir o conselho sugerido."
+      }
+    ],
+    "tipo_interpretacao": "mista",
+    "premium": false
+  },
+  {
+    "id": "tarot_inter_05",
+    "nome": "Cruz Simples",
+    "oraculo": "tarot",
+    "nivel": "intermediario",
+    "numero_cartas": 5,
+    "descricao": "Uma análise equilibrada que cobre os prós, contras e o caminho a seguir.",
+    "quando_usar": "Decisões importantes que exigem uma visão 360 graus da situação.",
+    "posicoes": [
+      {
+        "nome_da_posicao": "O que favorece",
+        "significado": "Forças positivas e aliados."
+      },
+      {
+        "nome_da_posicao": "O que dificulta",
+        "significado": "Obstáculos, medos ou oposições externas."
+      },
+      {
+        "nome_da_posicao": "O Caminho",
+        "significado": "A jornada ou processo que está sendo vivido."
+      },
+      {
+        "nome_da_posicao": "O Conselho",
+        "significado": "A orientação espiritual ou prática para o consulente."
+      },
+      {
+        "nome_da_posicao": "O Desfecho",
+        "significado": "A síntese final e o resultado da questão."
+      }
+    ],
+    "tipo_interpretacao": "mista",
+    "premium": false
+  },
+  {
+    "id": "tarot_inter_06",
+    "nome": "Linha Evolutiva",
+    "oraculo": "tarot",
+    "nivel": "intermediario",
+    "numero_cartas": 5,
+    "descricao": "Focada no crescimento pessoal e no aprendizado contido em uma experiência.",
+    "quando_usar": "Momentos de crise existencial ou transições de vida.",
+    "posicoes": [
+      {
+        "nome_da_posicao": "Origem",
+        "significado": "O ponto de partida espiritual ou emocional."
+      },
+      {
+        "nome_da_posicao": "Processo",
+        "significado": "Como o consulente está lidando com a mudança."
+      },
+      {
+        "nome_da_posicao": "Momento Atual",
+        "significado": "Onde o consulente se encontra na jornada agora."
+      },
+      {
+        "nome_da_posicao": "Próximo Passo",
+        "significado": "A ação imediata necessária para a evolução."
+      },
+      {
+        "nome_da_posicao": "Evolução Final",
+        "significado": "O estado de consciência ou resultado após o ciclo."
+      }
+    ],
+    "tipo_interpretacao": "psicologica",
+    "premium": false
+  },
+  {
+    "id": "tarot_inter_07",
+    "nome": "Tiragem do Amor",
+    "oraculo": "tarot",
+    "nivel": "intermediario",
+    "numero_cartas": 5,
+    "descricao": "Explora a dinâmica entre duas pessoas e o potencial do relacionamento.",
+    "quando_usar": "Início de namoro, crises conjugais ou curiosidade sobre a conexão com alguém.",
+    "posicoes": [
+      {
+        "nome_da_posicao": "Você",
+        "significado": "Seu estado emocional e o que você traz para a relação."
+      },
+      {
+        "nome_da_posicao": "O Outro",
+        "significado": "As intenções e sentimentos da outra pessoa."
+      },
+      {
+        "nome_da_posicao": "A Dinâmica",
+        "significado": "Como vocês interagem e o que sustenta a união."
+      },
+      {
+        "nome_da_posicao": "Desafio",
+        "significado": "O principal ponto de atrito que precisa ser trabalhado."
+      },
+      {
+        "nome_da_posicao": "Futuro",
+        "significado": "A tendência da relação nos próximos meses."
+      }
+    ],
+    "tipo_interpretacao": "mista",
+    "premium": false
+  },
+  {
+    "id": "tarot_inter_08",
+    "nome": "Tiragem da Carreira",
+    "oraculo": "tarot",
+    "nivel": "intermediario",
+    "numero_cartas": 5,
+    "descricao": "Avalia o ambiente profissional, oportunidades de promoção ou mudanças de emprego.",
+    "quando_usar": "Insatisfação no trabalho, busca por novas vagas ou planejamento de carreira.",
+    "posicoes": [
+      {
+        "nome_da_posicao": "Situação Atual",
+        "significado": "Sua posição real na empresa ou mercado."
+      },
+      {
+        "nome_da_posicao": "Obstáculo",
+        "significado": "O que impede seu crescimento ou sucesso."
+      },
+      {
+        "nome_da_posicao": "Oportunidade",
+        "significado": "Portas que podem se abrir ou talentos não aproveitados."
+      },
+      {
+        "nome_da_posicao": "Conselho",
+        "significado": "Como agir para alcançar seus objetivos profissionais."
+      },
+      {
+        "nome_da_posicao": "Resultado",
+        "significado": "O desfecho provável da sua trajetória atual."
+      }
+    ],
+    "tipo_interpretacao": "mista",
+    "premium": false
+  },
+  {
+    "id": "tarot_inter_09",
+    "nome": "Tiragem Espiritual",
+    "oraculo": "tarot",
+    "nivel": "intermediario",
+    "numero_cartas": 5,
+    "descricao": "Conecta o consulente com seu eu superior e guias espirituais.",
+    "quando_usar": "Busca por propósito, desenvolvimento mediúnico ou paz interior.",
+    "posicoes": [
+      {
+        "nome_da_posicao": "Conexão Superior",
+        "significado": "A mensagem dos seus guias ou do universo para você."
+      },
+      {
+        "nome_da_posicao": "Bloqueio",
+        "significado": "O que está impedindo sua fluidez espiritual."
+      },
+      {
+        "nome_da_posicao": "Lição",
+        "significado": "O aprendizado kármico ou evolutivo do momento."
+      },
+      {
+        "nome_da_posicao": "Prática",
+        "significado": "Ação ou ritual recomendado para sua elevação."
+      },
+      {
+        "nome_da_posicao": "Evolução",
+        "significado": "Onde sua alma chegará ao seguir este caminho."
+      }
+    ],
+    "tipo_interpretacao": "psicologica",
+    "premium": false
+  },
+  {
+    "id": "tarot_adv_10",
+    "nome": "Cruz Celta",
+    "oraculo": "tarot",
+    "nivel": "avancado",
+    "numero_cartas": 10,
+    "descricao": "A tiragem mais famosa e completa do Tarot, oferecendo uma visão profunda de todas as camadas de uma questão.",
+    "quando_usar": "Questões complexas que envolvem muitos fatores externos e internos.",
+    "posicoes": [
+      { "nome_da_posicao": "O Coração", "significado": "A essência do problema." },
+      { "nome_da_posicao": "O Desafio", "significado": "O que cruza e obstrui o caminho." },
+      { "nome_da_posicao": "O Passado Remoto", "significado": "A base e fundamentos antigos." },
+      { "nome_da_posicao": "O Passado Recente", "significado": "Eventos que acabaram de ocorrer." },
+      { "nome_da_posicao": "O Futuro Próximo", "significado": "O que está prestes a acontecer." },
+      { "nome_da_posicao": "O Futuro Distante", "significado": "A direção a longo prazo." },
+      { "nome_da_posicao": "O Consulente", "significado": "Como você se vê na situação." },
+      { "nome_da_posicao": "O Ambiente", "significado": "Influências de amigos, família e trabalho." },
+      { "nome_da_posicao": "Esperanças e Medos", "significado": "O que você projeta psicologicamente." },
+      { "nome_da_posicao": "O Desfecho", "significado": "A conclusão final da leitura." }
+    ],
+    "tipo_interpretacao": "mista",
+    "premium": true
+  },
+  {
+    "id": "tarot_adv_11",
+    "nome": "Mandala Astrológica",
+    "oraculo": "tarot",
+    "nivel": "avancado",
+    "numero_cartas": 12,
+    "descricao": "Mapeia as 12 áreas da vida baseando-se nas casas astrológicas.",
+    "quando_usar": "Leituras gerais de aniversário ou check-up completo de vida.",
+    "posicoes": [
+      { "nome_da_posicao": "Casa 1: Eu", "significado": "Personalidade e aparência." },
+      { "nome_da_posicao": "Casa 2: Finanças", "significado": "Valores e posses." },
+      { "nome_da_posicao": "Casa 3: Comunicação", "significado": "Irmãos e viagens curtas." },
+      { "nome_da_posicao": "Casa 4: Lar", "significado": "Família e raízes." },
+      { "nome_da_posicao": "Casa 5: Prazer", "significado": "Criatividade e romances." },
+      { "nome_da_posicao": "Casa 6: Saúde", "significado": "Rotina e trabalho diário." },
+      { "nome_da_posicao": "Casa 7: Parcerias", "significado": "Casamento e sociedades." },
+      { "nome_da_posicao": "Casa 8: Transformação", "significado": "Crises e recursos alheios." },
+      { "nome_da_posicao": "Casa 9: Expansão", "significado": "Estudos e viagens longas." },
+      { "nome_da_posicao": "Casa 10: Carreira", "significado": "Status e destino." },
+      { "nome_da_posicao": "Casa 11: Social", "significado": "Amigos e esperanças." },
+      { "nome_da_posicao": "Casa 12: Inconsciente", "significado": "Espiritualidade e o oculto." }
+    ],
+    "tipo_interpretacao": "mista",
+    "premium": true
+  },
+  {
+    "id": "tarot_adv_12",
+    "nome": "Tiragem Anual",
+    "oraculo": "tarot",
+    "nivel": "avancado",
+    "numero_cartas": 12,
+    "descricao": "Uma carta para cada mês do ano, prevendo as tendências cíclicas.",
+    "quando_usar": "Réveillon ou aniversários.",
+    "posicoes": [
+      { "nome_da_posicao": "Mês 1", "significado": "Energia do primeiro mês." },
+      { "nome_da_posicao": "Mês 2", "significado": "Energia do segundo mês." },
+      { "nome_da_posicao": "Mês 3", "significado": "Energia do terceiro mês." },
+      { "nome_da_posicao": "Mês 4", "significado": "Energia do quarto mês." },
+      { "nome_da_posicao": "Mês 5", "significado": "Energia do quinto mês." },
+      { "nome_da_posicao": "Mês 6", "significado": "Energia do sexto mês." },
+      { "nome_da_posicao": "Mês 7", "significado": "Energia do sétimo mês." },
+      { "nome_da_posicao": "Mês 8", "significado": "Energia do oitavo mês." },
+      { "nome_da_posicao": "Mês 9", "significado": "Energia do nono mês." },
+      { "nome_da_posicao": "Mês 10", "significado": "Energia do décimo mês." },
+      { "nome_da_posicao": "Mês 11", "significado": "Energia do décimo primeiro mês." },
+      { "nome_da_posicao": "Mês 12", "significado": "Energia do décimo segundo mês." }
+    ],
+    "tipo_interpretacao": "preditiva",
+    "premium": true
+  },
+  {
+    "id": "tarot_adv_13",
+    "nome": "Árvore da Vida",
+    "oraculo": "tarot",
+    "nivel": "avancado",
+    "numero_cartas": 10,
+    "descricao": "Baseada na Cabala, analisa a descida da energia divina até a manifestação física.",
+    "quando_usar": "Autoconhecimento profundo e compreensão kármica.",
+    "posicoes": [
+      { "nome_da_posicao": "Kether", "significado": "Propósito divino." },
+      { "nome_da_posicao": "Chokmah", "significado": "Sabedoria e impulso masculino." },
+      { "nome_da_posicao": "Binah", "significado": "Entendimento e forma feminina." },
+      { "nome_da_posicao": "Chesed", "significado": "Misericórdia e expansão." },
+      { "nome_da_posicao": "Geburah", "significado": "Força e severidade." },
+      { "nome_da_posicao": "Tiphareth", "significado": "Beleza e harmonia central." },
+      { "nome_da_posicao": "Netzach", "significado": "Vitória e emoções." },
+      { "nome_da_posicao": "Hod", "significado": "Esplendor e intelecto." },
+      { "nome_da_posicao": "Yesod", "significado": "Fundação e subconsciente." },
+      { "nome_da_posicao": "Malkuth", "significado": "Reino e realidade física." }
+    ],
+    "tipo_interpretacao": "psicologica",
+    "premium": true
+  },
+  {
+    "id": "tarot_adv_14",
+    "nome": "Mandala de Relacionamento",
+    "oraculo": "tarot",
+    "nivel": "avancado",
+    "numero_cartas": 7,
+    "descricao": "Uma radiografia completa da mente, coração e corpo de ambos os parceiros.",
+    "quando_usar": "Relacionamentos sérios em fase de reavaliação.",
+    "posicoes": [
+      { "nome_da_posicao": "Mental Consulente", "significado": "O que você pensa sobre a relação." },
+      { "nome_da_posicao": "Emocional Consulente", "significado": "O que você sente." },
+      { "nome_da_posicao": "Físico Consulente", "significado": "Seu desejo e ação na relação." },
+      { "nome_da_posicao": "Mental Parceiro", "significado": "O que o outro pensa." },
+      { "nome_da_posicao": "Emocional Parceiro", "significado": "O que o outro sente." },
+      { "nome_da_posicao": "Físico Parceiro", "significado": "O desejo e ação do outro." },
+      { "nome_da_posicao": "A Relação", "significado": "A síntese e o futuro do casal." }
+    ],
+    "tipo_interpretacao": "mista",
+    "premium": true
+  },
+  {
+    "id": "lenormand_simples_01",
+    "nome": "Carta Única",
+    "oraculo": "lenormand",
+    "nivel": "simples",
+    "numero_cartas": 1,
+    "descricao": "O foco central do dia ou uma resposta rápida para uma pergunta objetiva.",
+    "quando_usar": "Dúvidas práticas do cotidiano.",
+    "posicoes": [
+      { "nome_da_posicao": "Foco do Dia", "significado": "O evento ou energia principal." }
+    ],
+    "tipo_interpretacao": "preditiva",
+    "premium": false
+  },
+  {
+    "id": "lenormand_simples_02",
+    "nome": "Duas Cartas (Combinação Direta)",
+    "oraculo": "lenormand",
+    "nivel": "simples",
+    "numero_cartas": 2,
+    "descricao": "A base da leitura Lenormand: a combinação de um substantivo com um adjetivo/verbo.",
+    "quando_usar": "Entender a qualidade de um evento ou pessoa.",
+    "posicoes": [
+      { "nome_da_posicao": "Sujeito", "significado": "O tema ou pessoa central." },
+      { "nome_da_posicao": "Predicado / Ação", "significado": "O que acontece ou como o sujeito se comporta." }
+    ],
+    "tipo_interpretacao": "combinatoria",
+    "premium": false
+  },
+  {
+    "id": "lenormand_simples_03",
+    "nome": "Três Cartas (Linha do Tempo)",
+    "oraculo": "lenormand",
+    "nivel": "simples",
+    "numero_cartas": 3,
+    "descricao": "Uma leitura linear para ver o desenrolar rápido de uma situação.",
+    "quando_usar": "Previsões de curto prazo.",
+    "posicoes": [
+      { "nome_da_posicao": "Passado", "significado": "O que causou a situação." },
+      { "nome_da_posicao": "Presente", "significado": "O estado atual." },
+      { "nome_da_posicao": "Futuro", "significado": "O resultado imediato." }
+    ],
+    "tipo_interpretacao": "preditiva",
+    "premium": false
+  },
+  {
+    "id": "lenormand_simples_04",
+    "nome": "Três Cartas (Situação / Desenvolvimento / Resultado)",
+    "oraculo": "lenormand",
+    "nivel": "simples",
+    "numero_cartas": 3,
+    "descricao": "Focada no processo de um projeto ou evento.",
+    "quando_usar": "Acompanhamento de metas ou negócios.",
+    "posicoes": [
+      { "nome_da_posicao": "Início", "significado": "Como a questão começa." },
+      { "nome_da_posicao": "Desenvolvimento", "significado": "O meio do caminho e desafios." },
+      { "nome_da_posicao": "Conclusão", "significado": "O fechamento do ciclo." }
+    ],
+    "tipo_interpretacao": "combinatoria",
+    "premium": false
+  },
+  {
+    "id": "lenormand_inter_05",
+    "nome": "Cruz de 5 Cartas",
+    "oraculo": "lenormand",
+    "nivel": "intermediario",
+    "numero_cartas": 5,
+    "descricao": "Uma análise espacial que mostra influências ocultas e o destino.",
+    "quando_usar": "Quando se quer detalhes sobre o que está 'acima' e 'abaixo' da questão.",
+    "posicoes": [
+      { "nome_da_posicao": "Centro", "significado": "O tema principal." },
+      { "nome_da_posicao": "Esquerda", "significado": "O passado ou o que está saindo." },
+      { "nome_da_posicao": "Direita", "significado": "O futuro ou o que está chegando." },
+      { "nome_da_posicao": "Topo", "significado": "Pensamentos e objetivos conscientes." },
+      { "nome_da_posicao": "Base", "significado": "Fatores ocultos ou inconscientes." }
+    ],
+    "tipo_interpretacao": "combinatoria",
+    "premium": false
+  },
+  {
+    "id": "lenormand_inter_06",
+    "nome": "Linha de 5 Cartas",
+    "oraculo": "lenormand",
+    "nivel": "intermediario",
+    "numero_cartas": 5,
+    "descricao": "Uma narrativa detalhada que permite ler combinações cruzadas entre as cartas.",
+    "quando_usar": "Histórias complexas e previsões detalhadas de eventos.",
+    "posicoes": [
+      { "nome_da_posicao": "Carta 1", "significado": "Início da jornada." },
+      { "nome_da_posicao": "Carta 2", "significado": "Primeira influência." },
+      { "nome_da_posicao": "Carta 3", "significado": "O pivô da questão." },
+      { "nome_da_posicao": "Carta 4", "significado": "Segunda influência." },
+      { "nome_da_posicao": "Carta 5", "significado": "Desfecho final." }
+    ],
+    "tipo_interpretacao": "combinatoria",
+    "premium": false
+  },
+  {
+    "id": "lenormand_inter_07",
+    "nome": "Tiragem do Amor",
+    "oraculo": "lenormand",
+    "nivel": "intermediario",
+    "numero_cartas": 5,
+    "descricao": "Focada na fidelidade, sentimentos e futuro afetivo.",
+    "quando_usar": "Dúvidas sobre parceiros ou novos pretendentes.",
+    "posicoes": [
+      { "nome_da_posicao": "O que une", "significado": "A força da relação." },
+      { "nome_da_posicao": "O que separa", "significado": "O ponto de discórdia." },
+      { "nome_da_posicao": "O que ele/a pensa", "significado": "Lado racional do outro." },
+      { "nome_da_posicao": "O que ele/a sente", "significado": "Lado emocional do outro." },
+      { "nome_da_posicao": "Futuro", "significado": "O destino do casal." }
+    ],
+    "tipo_interpretacao": "preditiva",
+    "premium": false
+  },
+  {
+    "id": "lenormand_inter_08",
+    "nome": "Tiragem Financeira",
+    "oraculo": "lenormand",
+    "nivel": "intermediario",
+    "numero_cartas": 5,
+    "descricao": "Analisa o fluxo de caixa, investimentos e riscos.",
+    "quando_usar": "Planejamento financeiro ou dívidas.",
+    "posicoes": [
+      { "nome_da_posicao": "Ganhos", "significado": "Entradas de dinheiro." },
+      { "nome_da_posicao": "Gastos", "significado": "Saídas e desperdícios." },
+      { "nome_da_posicao": "Oportunidade", "significado": "Onde investir ou ganhar mais." },
+      { "nome_da_posicao": "Perigo", "significado": "Riscos e perdas." },
+      { "nome_da_posicao": "Saldo Final", "significado": "Como estará sua conta no futuro." }
+    ],
+    "tipo_interpretacao": "preditiva",
+    "premium": false
+  },
+  {
+    "id": "lenormand_inter_09",
+    "nome": "Mandala 9 Cartas (3x3)",
+    "oraculo": "lenormand",
+    "nivel": "intermediario",
+    "numero_cartas": 9,
+    "descricao": "Uma mini mesa real que permite ler linhas, colunas e diagonais.",
+    "quando_usar": "Visão detalhada de uma situação específica com múltiplos ângulos.",
+    "posicoes": [
+      { "nome_da_posicao": "Linha 1", "significado": "O passado e fundamentos." },
+      { "nome_da_posicao": "Linha 2", "significado": "O presente e a ação." },
+      { "nome_da_posicao": "Linha 3", "significado": "O futuro e resultados." }
+    ],
+    "tipo_interpretacao": "combinatoria",
+    "premium": false
+  },
+  {
+    "id": "lenormand_adv_10",
+    "nome": "Mandala Astrológica (12 Casas)",
+    "oraculo": "lenormand",
+    "nivel": "avancado",
+    "numero_cartas": 12,
+    "descricao": "Previsão anual ou semestral usando o sistema de casas astrológicas com a objetividade Lenormand.",
+    "quando_usar": "Grandes revisões de vida.",
+    "posicoes": [
+      { "nome_da_posicao": "Casa 1: Eu", "significado": "O consulente." },
+      { "nome_da_posicao": "Casa 2: Dinheiro", "significado": "Finanças." },
+      { "nome_da_posicao": "Casa 3: Comunicação", "significado": "Ambiente imediato." },
+      { "nome_da_posicao": "Casa 4: Família", "significado": "Raízes." },
+      { "nome_da_posicao": "Casa 5: Criatividade", "significado": "Filhos e prazer." },
+      { "nome_da_posicao": "Casa 6: Trabalho", "significado": "Saúde e rotina." },
+      { "nome_da_posicao": "Casa 7: Relacionamentos", "significado": "Parcerias." },
+      { "nome_da_posicao": "Casa 8: Crises", "significado": "Transformações." },
+      { "nome_da_posicao": "Casa 9: Conhecimento", "significado": "Viagens e estudos." },
+      { "nome_da_posicao": "Casa 10: Carreira", "significado": "Sucesso público." },
+      { "nome_da_posicao": "Casa 11: Amigos", "significado": "Grupos sociais." },
+      { "nome_da_posicao": "Casa 12: Karma", "significado": "Inimigos ocultos e espiritualidade." }
+    ],
+    "tipo_interpretacao": "preditiva",
+    "premium": true
+  },
+  {
+    "id": "lenormand_adv_11",
+    "nome": "Grande Mesa Real (36 cartas)",
+    "oraculo": "lenormand",
+    "nivel": "avancado",
+    "numero_cartas": 36,
+    "descricao": "A leitura definitiva do Baralho Cigano, onde todas as cartas são usadas para mapear o destino completo do consulente.",
+    "quando_usar": "Consultas de longa duração (6 meses a 1 ano).",
+    "posicoes": [
+      { "nome_da_posicao": "Panorama Geral", "significado": "Todas as 36 cartas em suas respectivas casas." }
+    ],
+    "tipo_interpretacao": "combinatoria",
+    "premium": true
+  },
+  {
+    "id": "lenormand_adv_12",
+    "nome": "Mesa Real com Casas Fixas",
+    "oraculo": "lenormand",
+    "nivel": "avancado",
+    "numero_cartas": 36,
+    "descricao": "Lê a interação entre a carta sorteada e a 'casa' (significado fixo) onde ela caiu.",
+    "quando_usar": "Quando se busca precisão absoluta sobre eventos específicos.",
+    "posicoes": [
+      { "nome_da_posicao": "Interação Carta/Casa", "significado": "Análise de 36 pontos de destino." }
+    ],
+    "tipo_interpretacao": "combinatoria",
+    "premium": true
+  },
+  {
+    "id": "lenormand_adv_13",
+    "nome": "Leitura por Espelhamento",
+    "oraculo": "lenormand",
+    "nivel": "avancado",
+    "numero_cartas": 36,
+    "descricao": "Técnica avançada dentro da Mesa Real que conecta cartas em posições opostas para revelar conexões kármicas.",
+    "quando_usar": "Entender o 'porquê' oculto dos eventos da Mesa Real.",
+    "posicoes": [
+      { "nome_da_posicao": "Espelhamento", "significado": "Conexões entre cartas opostas no tabuleiro." }
+    ],
+    "tipo_interpretacao": "combinatoria",
+    "premium": true
+  },
+  {
+    "id": "lenormand_adv_14",
+    "nome": "Leitura por Casas + Combinações Cruzadas",
+    "oraculo": "lenormand",
+    "nivel": "avancado",
+    "numero_cartas": 36,
+    "descricao": "O nível máximo de leitura: combina casas, espelhamento, cavalgamento e diagonais.",
+    "quando_usar": "Apenas para leitores profissionais e questões de vida ou morte simbólica.",
+    "posicoes": [
+      { "nome_da_posicao": "Síntese Total", "significado": "Uso de todas as técnicas de leitura Lenormand simultaneamente." }
+    ],
+    "tipo_interpretacao": "combinatoria",
+    "premium": true
+  }
+]
