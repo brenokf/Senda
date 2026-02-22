@@ -10,6 +10,49 @@ async function startServer() {
 
   app.use(express.json());
 
+  // OpenAI GPT Image API Proxy
+  app.post("/api/generate-image-gpt", async (req, res) => {
+    const { prompt } = req.body;
+    const openaiKey = process.env.OPENAI_API_KEY;
+
+    if (!openaiKey) {
+      return res.status(500).json({ error: "OPENAI_API_KEY not configured" });
+    }
+
+    try {
+      const response = await fetch("https://api.openai.com/v1/images/generations", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${openaiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          model: "gpt-image-1",
+          prompt,
+          size: "1024x1536",
+          quality: "medium",
+        }),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`OpenAI Image API error (${response.status}): ${errorText}`);
+      }
+
+      const data = await response.json();
+      const imageBase64 = data?.data?.[0]?.b64_json;
+
+      if (!imageBase64) {
+        throw new Error("OpenAI response did not include image data");
+      }
+
+      return res.json({ imageUrl: `data:image/png;base64,${imageBase64}` });
+    } catch (error: any) {
+      console.error("OpenAI GPT image error:", error);
+      return res.status(500).json({ error: error.message });
+    }
+  });
+
   // Hugging Face API Proxy (Fallback)
   app.post("/api/generate-image-fallback", async (req, res) => {
     const { prompt } = req.body;
