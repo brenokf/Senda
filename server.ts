@@ -10,6 +10,85 @@ async function startServer() {
 
   app.use(express.json());
 
+  // OpenAI GPT Image API Proxy
+  app.post("/api/generate-image-gpt", async (req, res) => {
+    const { prompt } = req.body;
+    const openaiKey = process.env.OPENAI_API_KEY;
+
+    if (!openaiKey) {
+      return res.status(500).json({ error: "OPENAI_API_KEY not configured" });
+    }
+
+    const sanitizedPrompt = typeof prompt === "string" ? prompt.trim() : "";
+    if (!sanitizedPrompt) {
+      return res.status(400).json({ error: "prompt is required" });
+    }
+
+    const maxRetries = 3;
+    let attempt = 0;
+
+    while (attempt < maxRetries) {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 45000);
+
+      try {
+        const response = await fetch("https://api.openai.com/v1/images/generations", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${openaiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model: "gpt-image-1",
+            prompt: sanitizedPrompt,
+            size: "1024x1536",
+            quality: "medium",
+            response_format: "b64_json",
+          }),
+          signal: controller.signal,
+        });
+
+        clearTimeout(timeout);
+
+        if ([429, 500, 502, 503, 504].includes(response.status) && attempt < maxRetries - 1) {
+          const waitMs = 1500 * (attempt + 1);
+          await new Promise((resolve) => setTimeout(resolve, waitMs));
+          attempt++;
+          continue;
+        }
+
+        if (!response.ok) {
+          const errorText = await response.text();
+          return res.status(response.status).json({ error: `OpenAI Image API error (${response.status}): ${errorText}` });
+        }
+
+        const data = await response.json();
+        const imageBase64 = data?.data?.[0]?.b64_json;
+
+        if (!imageBase64) {
+          return res.status(502).json({ error: "OpenAI response did not include image data" });
+        }
+
+        return res.json({ imageUrl: `data:image/png;base64,${imageBase64}` });
+      } catch (error: any) {
+        clearTimeout(timeout);
+        const isLastAttempt = attempt >= maxRetries - 1;
+        if (!isLastAttempt) {
+          const waitMs = 1500 * (attempt + 1);
+          await new Promise((resolve) => setTimeout(resolve, waitMs));
+          attempt++;
+          continue;
+        }
+
+        const errorMessage = error?.name === "AbortError" ? "OpenAI request timed out" : error?.message || "Unknown OpenAI error";
+        console.error("OpenAI GPT image error:", error);
+        return res.status(500).json({ error: errorMessage });
+      }
+    }
+
+    return res.status(500).json({ error: "OpenAI image generation failed after retries" });
+  });
+
   // Hugging Face API Proxy (Fallback)
   app.post("/api/generate-image-fallback", async (req, res) => {
     const { prompt } = req.body;

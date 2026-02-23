@@ -158,7 +158,7 @@ const getEnglishCardName = (cardName: string): string => {
 
 const failedServices = new Set<string>();
 
-export async function generateCardImage(cardName: string, oracleType: string): Promise<{ imageUrl: string, source: 'gemini' | 'huggingface' } | null> {
+export async function generateCardImage(cardName: string, oracleType: string): Promise<{ imageUrl: string, source: 'gemini' | 'gpt' | 'huggingface' } | null> {
   const ai = getAI();
   const englishName = getEnglishCardName(cardName);
   
@@ -203,6 +203,32 @@ export async function generateCardImage(cardName: string, oracleType: string): P
     } catch (error) {
       console.warn("Gemini image generation failed, marking as disabled for this session.", error);
       failedServices.add('gemini');
+    }
+  }
+
+  // Fallback para GPT Image via Servidor
+  if (!failedServices.has('gpt')) {
+    try {
+      const response = await fetch("/api/generate-image-gpt", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        return {
+          imageUrl: data.imageUrl,
+          source: 'gpt'
+        };
+      } else {
+        const errorText = await response.text();
+        console.error("GPT image endpoint failed, marking as disabled for this session:", errorText);
+        failedServices.add('gpt');
+      }
+    } catch (error) {
+      console.error("Error calling GPT image endpoint, marking as disabled for this session:", error);
+      failedServices.add('gpt');
     }
   }
 
